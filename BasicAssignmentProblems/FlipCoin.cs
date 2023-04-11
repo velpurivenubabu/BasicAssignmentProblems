@@ -32,7 +32,6 @@ namespace BasicAssignmentProblems
             return "Head Total Persentage is : " + HeadsPersentage+" %" + " Tail Total persentage is : " + TailssPersentage + " %";
 
 
-
         }
     }
 }

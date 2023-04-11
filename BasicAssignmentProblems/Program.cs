@@ -13,8 +13,8 @@
                 case 1:
                     Console.WriteLine("Please Enter The Number How many times you want to flip the coin");
                     int number = Convert.ToInt32(Console.ReadLine());
-                    string v=FlipCoin.FindPercentage(number);
-                    Console.WriteLine(v);   
+                    string persentage=FlipCoin.FindPercentage(number);
+                    Console.WriteLine(persentage);   
                     break;
 
             }
