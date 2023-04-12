@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to BasicProgramming problems Assignment-1!");
             Console.WriteLine("Please choose any one programe from below options");
-            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber");
+            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber\n6.QuotientandRemainder");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -38,6 +38,13 @@
                     Console.WriteLine("Please Enter The Number witch you want to Find in Prime Factors");
                     int inputNumber = Convert.ToInt32(Console.ReadLine());
                     primeFactors.FindPrimeFactors(inputNumber);
+                    break;
+                    case 6:
+                    Console.WriteLine("Please Enter The Divindend");
+                    double divindend = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please Enter The Divisior");
+                    double divisior = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(QuotientandRemainder.FindQuotientAndRemainder(divindend, divisior));
                     break;
 
             }
