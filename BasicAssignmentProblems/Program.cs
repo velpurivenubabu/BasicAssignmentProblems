@@ -41,12 +41,19 @@
                     break;
                     case 6:
                     Console.WriteLine("Please Enter The Divindend");
-                    double divindend = Convert.ToInt32(Console.ReadLine());
+                    double divindend = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Please Enter The Divisior");
-                    double divisior = Convert.ToInt32(Console.ReadLine());
+                    double divisior = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine(QuotientandRemainder.FindQuotientAndRemainder(divindend, divisior));
                     break;
-
+                    case 7:
+                    Console.WriteLine("Please Enter The Number1");
+                    double number1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Please Enter The Number2");
+                    double number2 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine(SwapCase.Swapping(number1,number2));
+                    break;
+                    
             }
         }
     }   
