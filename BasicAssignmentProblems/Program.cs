@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to BasicProgramming problems Assignment-1!");
             Console.WriteLine("Please choose any one programe from below options");
-            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm");
+            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -33,6 +33,11 @@
                     int HarmonicNumber = Convert.ToInt32(Console.ReadLine());
                     string reqTotal = HarmonicSeries.FindTotal(HarmonicNumber);
                     Console.WriteLine(reqTotal);
+                    break;
+                    case 5:
+                    Console.WriteLine("Please Enter The Number witch you want to Find in Prime Factors");
+                    int inputNumber = Convert.ToInt32(Console.ReadLine());
+                    primeFactors.FindPrimeFactors(inputNumber);
                     break;
 
             }
