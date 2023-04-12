@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to BasicProgramming problems Assignment-1!");
             Console.WriteLine("Please choose any one programe from below options");
-            Console.WriteLine("1.FlipCoin\n2.LeapYear");
+            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +21,12 @@
                     int year = Convert.ToInt32(Console.ReadLine());
                     string YearType = LeapYear.FindYear(year);
                     Console.WriteLine(YearType);
+                    break;
+                    case 3:
+                    Console.WriteLine("Please Enter The Maximum power of 2 wiich you want to find");
+                    int Power = Convert.ToInt32(Console.ReadLine());
+                    string PowersOfTwo = PowersOf2.FindPowers(Power);
+                    //Console.WriteLine(PowersOfTwo);
                     break;
 
             }
