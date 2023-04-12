@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to BasicProgramming problems Assignment-1!");
             Console.WriteLine("Please choose any one programe from below options");
-            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo");
+            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -27,6 +27,12 @@
                     int Power = Convert.ToInt32(Console.ReadLine());
                     string PowersOfTwo = PowersOf2.FindPowers(Power);
                     //Console.WriteLine(PowersOfTwo);
+                    break;
+                    case 4:
+                    Console.WriteLine("Please Enter The Number witch you want to Find in Harmonic Series");
+                    int HarmonicNumber = Convert.ToInt32(Console.ReadLine());
+                    string reqTotal = HarmonicSeries.FindTotal(HarmonicNumber);
+                    Console.WriteLine(reqTotal);
                     break;
 
             }
