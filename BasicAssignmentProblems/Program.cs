@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to BasicProgramming problems Assignment-1!");
             Console.WriteLine("Please choose any one programe from below options");
-            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber\n6.QuotientandRemainder\n7.SwapCases\n8.EvenOrOdd");
+            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber\n6.QuotientandRemainder\n7.SwapCases\n8.EvenOrOdd\n9.VowelOrConsonant");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -58,6 +58,12 @@
                     int Num = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine(EvenOrOdd.FindEvenOrOdd(Num));
                     break;
+                case 9:
+                    Console.WriteLine("Please Enter any Alphabet");
+                    char letter = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine(VowelorConsonant.FindVowelorConsonant(letter));
+                    break;
+
             }
         }
     }   
