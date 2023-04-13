@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to BasicProgramming problems Assignment-1!");
             Console.WriteLine("Please choose any one programe from below options");
-            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber\n6.QuotientandRemainder\n7.SwapCases\n8.EvenOrOdd\n9.VowelOrConsonant");
+            Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowersOfTwo\n4.NthHarmonicTerm\n5.primeFactorsOfGivenNumber\n6.QuotientandRemainder\n7.SwapCases\n8.EvenOrOdd\n9.VowelOrConsonant\n10 GratestAmongThreeNumbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -62,6 +62,19 @@
                     Console.WriteLine("Please Enter any Alphabet");
                     char letter = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine(VowelorConsonant.FindVowelorConsonant(letter));
+                    break;
+                case 10:
+                    Console.WriteLine("Please Enter any Number1");
+                    int Number1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please Enter any Number2");
+                    int Number2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please Enter any Number3");
+                    int Number3 = Convert.ToInt32(Console.ReadLine());
+                    GreatestAmongThreeNumbers.FindTheGrreatestNumber(Number1, Number2, Number3);
+                    break;
+                default:
+               
+                    Console.WriteLine("Enter above Mentioned Optons only");
                     break;
 
             }
